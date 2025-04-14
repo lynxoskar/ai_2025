@@ -13,6 +13,8 @@
  - CHATGPT usage nov23 100 million active users
     december24 300 million users (pro subscription 200$ a month)
     feb25 400 million
+    92% of Fortune 500 companies by 2024
+
 
  - still a token predicting engine
     - new resoning 
@@ -21,10 +23,14 @@
     - echosystem around curating the use of an llm - chain of thougth strategies 
     - different types 4o o family reasoning
     - deep seek instroduced visual resong - different languages (time?)
+    - context window
+
+- agents , mcp
+    - applications of the token workflow
 
  - is this a real thing. Do we know better today
     - limit of data creating synthetic data, vendors of specific data
-    - limit of trainings
+    - limit of scale of training ..
     - the foundation modelrace - china and us
     - dystopic predictions; https://ai-2027.com/ 
 
@@ -47,6 +53,9 @@
     <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Yann LeCun: I&#39;m not interested in LLMs anymore - they&#39;re the past. The future is in four more interesting areas: machines that understand the physical world, persistent memory, reasoning, and planning. <a href="https://t.co/qRH7XVlbWq">pic.twitter.com/qRH7XVlbWq</a></p>&mdash; Victor (@victor_explore) <a href="https://twitter.com/victor_explore/status/1910978633000157201?ref_src=twsrc%5Etfw">April 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     https://www.vals.ai/home
 
+- future is this the real thing or not
+    looks more plausable today 
+    pivotal moments 1. ai builds ai. 2. Nationalisation of ai companies. 3 the race is on
 
 
 
