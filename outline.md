@@ -7,20 +7,36 @@
 ## idea - timeline from last presenation 
  - the foundation models    
     previous google bert, meta laba, openai 
-    today - many new players
+    today - many new players. Not sure who wins. 
+ - snowflake etal bows out of the race, works on applications
 
+ - CHATGPT usage nov23 100 million active users
+    december24 300 million users (pro subscription 200$ a month)
+    feb25 400 million
 
  - still a token predicting engine
     - new resoning 
     - prompt methods
     - temperature, ktop, ptop 
     - echosystem around curating the use of an llm - chain of thougth strategies 
+    - different types 4o o family reasoning
+    - deep seek instroduced visual resong - different languages (time?)
 
  - is this a real thing. Do we know better today
     - limit of data creating synthetic data, vendors of specific data
     - limit of trainings
+    - the foundation modelrace - china and us
+    - dystopic predictions; https://ai-2027.com/ 
+
+- Not solved
+    understand the physical world 
+    - movie / image generation. Movie a resonable compression of the physical world
+    consistent memory. 
+    resoning 
+    planing
 
 
+    
  - multimodal 
     - text is perhaps the best area
     - image - to text - then interpret language is compression of knowledge 
