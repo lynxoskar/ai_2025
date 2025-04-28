@@ -4,6 +4,34 @@
 
 ## i will dump outlining thoughts here and include into the presentation
 
+
+### line of thought - development
+"""“The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.”
+— Charles Hard Townes"""  
+
+- ideas have been around. Deep learing and neuralnets are old ideas. 
+- But the enablers  - hardware - attention is all you need paper tranformers - big corpus of information made it happen 
+- is it the big ideas that have changed or is it environment - example guns germs and steel; "writing have been around for long, but only when everybody reads it makes sence for a gutenberg revolution"
+- leeds to current day. Intelligence need enablers - otherwise all you have is more horse powers - ""callin ai revolution an intelligence explosion is like calling the industrial revolution a horsepower explosion"". This is macro scale, what does that mean for lynx in a microscale. Need enablers, need to create oportunitites for radical change. Data - Innovation - Trust
+
+### line of thougth - impact
+"""“The future is already here – it's just not evenly distributed.”
+― William Gibson"""
+- not. Andrej Karpathey of its every mans hand atm
+
+### current techniques
+- context aware
+- resoning
+- agent
+
+### current fucus
+ - agents
+ - a2a
+ - mcp
+ - toolings
+
+
+
 ## idea - timeline from last presenation 
  - the foundation models    
     previous google bert, meta laba, openai 
@@ -66,3 +94,5 @@
 
 
 
+-- links
+https://martinfowler.com/articles/deepseek-papers.html

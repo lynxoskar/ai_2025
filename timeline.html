@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI and LLM Timeline Presentation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section>
+        <h1>AI and LLM Pivotal Moments</h1>
+        <p>A timeline of key developments and adoption</p>
+      </section>
+      <!-- Timeline Slides -->
+      <section data-timeline-start-date="2010-01-01" data-timeline-headline="DeepMind Founded">
+        <h2>DeepMind Founded</h2>
+        <p>DeepMind was established, advancing reinforcement learning and AI applications like AlphaGo.</p>
+      </section>
+      <section data-timeline-start-date="2012-01-01" data-timeline-headline="AlexNet Wins ImageNet">
+        <h2>AlexNet Wins ImageNet</h2>
+        <p>AlexNet’s success showcased deep neural networks, sparking the deep learning revolution.</p>
+      </section>
+      <section data-timeline-start-date="2015-12-01" data-timeline-headline="OpenAI Founded">
+        <h2>OpenAI Founded</h2>
+        <p>OpenAI was created to develop safe artificial general intelligence, leading to GPT models.</p>
+      </section>
+      <section data-timeline-start-date="2017-06-12" data-timeline-headline="Transformers Introduced">
+        <h2>Transformers Introduced</h2>
+        <p>The "Attention Is All You Need" paper introduced transformers, revolutionizing NLP.</p>
+      </section>
+      <section data-timeline-start-date="2021-06-29" data-timeline-headline="GitHub Copilot Launched">
+        <h2>GitHub Copilot Launched</h2>
+        <p>GitHub Copilot, an AI coding assistant, gained over 1 million users by 2023.</p>
+      </section>
+      <section data-timeline-start-date="2022-11-30" data-timeline-headline="ChatGPT Launched">
+        <h2>ChatGPT Launched</h2>
+        <p>ChatGPT reached 100 million users in two months, driving generative AI adoption.</p>
+      </section>
+      <section data-timeline-start-date="2023-02-01" data-timeline-headline="ChatGPT Plus and Cursor AI">
+        <h2>ChatGPT Plus and Cursor AI</h2>
+        <p>ChatGPT Plus launched with 215,000 subscribers; Cursor AI emerged for coding.</p>
+      </section>
+      <section data-timeline-start-date="2024-09-01" data-timeline-headline="AI Adoption Surge">
+        <h2>AI Adoption Surge</h2>
+        <p>78% of companies used AI; ChatGPT Plus hit 15.5 million subscribers.</p>
+      </section>
+    </div>
+  </div>
+  <!-- reveal.js and Plugin Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+  <!-- TimelineJS JS -->
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <!-- reveal-timeline Plugin (adjust path as needed) -->
+  <script src="plugins/reveal-timeline/reveal-timeline.js"></script>
+  <script>
+    Reveal.initialize({
+      timeline: {
+        position: 'bottom',
+        height: '200px'
+      },
+      plugins: [ RevealTimeline ]
+    });
+  </script>
+</body>
+</html>
