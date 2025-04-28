@@ -34,7 +34,7 @@
     - the foundation modelrace - china and us
     - dystopic predictions; https://ai-2027.com/ 
 
-- Not solved
+## Not solved
     understand the physical world 
     - movie / image generation. Movie a resonable compression of the physical world
     consistent memory. 
@@ -43,19 +43,26 @@
 
 
     
- - multimodal 
+## multimodal 
     - text is perhaps the best area
     - image - to text - then interpret language is compression of knowledge 
 
 
-- arc - benchmarks 
+## arc - benchmarks 
     https://arcprize.org/
     <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Yann LeCun: I&#39;m not interested in LLMs anymore - they&#39;re the past. The future is in four more interesting areas: machines that understand the physical world, persistent memory, reasoning, and planning. <a href="https://t.co/qRH7XVlbWq">pic.twitter.com/qRH7XVlbWq</a></p>&mdash; Victor (@victor_explore) <a href="https://twitter.com/victor_explore/status/1910978633000157201?ref_src=twsrc%5Etfw">April 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     https://www.vals.ai/home
 
-- future is this the real thing or not
+## future is this the real thing or not
     looks more plausable today 
     pivotal moments 1. ai builds ai. 2. Nationalisation of ai companies. 3 the race is on
+
+## adoption
+   rise of openai 
+   rise of competition
+   rise of tools 
+   fortune 500 
+   7 common mistakes
 
 
 
