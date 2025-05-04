@@ -46,8 +46,8 @@ Key Feature
 Combines self-reflection with external tool interaction.
 
 Diagram (Mermaid)
-mermaid
 
+```
 flowchart TD
     A[User] -->|Query| B[LLM<br>Reason]
     B -->|Action| C[Tools]
@@ -65,8 +65,7 @@ Key Feature
 Task decomposition and strategic execution.
 
 Diagram (Mermaid)
-mermaid
-
+```mermaid
 flowchart TD
     A[User] -->|Query| B[Planner]
     B --> C[Generated Tasks]
@@ -76,6 +75,7 @@ flowchart TD
     E -->|NO| C
     E -->|YES| F[Response]
     F --> A
+```
 
 5. Multi-Agent Pattern
 Overview

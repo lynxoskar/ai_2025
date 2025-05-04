@@ -100,6 +100,7 @@ The Multi-Agent Pattern involves multiple specialized AI agents working together
 
 ### Visual
 ![Multi-Agent Pattern Diagram]
+'''mermaid
 flowchart TD
     A[User] -->|Query| B[PM Agent]
     B -->|Delegation| C[Tech Lead Agent]

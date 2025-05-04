@@ -14,7 +14,7 @@ https://x.com/i/status/1907412051787657516
 
 im doing a presentation on ai for my company. this is my inital plan 
 
-start - """Calling the Ai-revolution an intelligence explosion is like calling the industralization an horsepower explosion - Tamay Besiroglu """ 
+start - 
 
 1. Timeline with pivotal moments of ai from the start with deepseek and to current day
     - enumerate llms at last presentation 2years ago. 
@@ -22,8 +22,10 @@ start - """Calling the Ai-revolution an intelligence explosion is like calling t
     
 
 2. Enablers - making the ai happen.  
+
     """“The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.”
     — Charles Hard Townes"""  
+
     reasoning of what made this happen, big corpus of data/text. hardware and compute comming online. 
     Making a referece to guns germs and steels example of textprinting need reading consumers to be any revolution.... //look up citation
     enablers and the ability to adopt is key. Yesterdays success is the most dangerous thing you face...

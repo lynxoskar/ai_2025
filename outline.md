@@ -5,19 +5,38 @@
 ## i will dump outlining thoughts here and include into the presentation
 
 
+
+
 ### line of thought - development
-"""“The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.”
+> The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.”
 — Charles Hard Townes"""  
 
 - ideas have been around. Deep learing and neuralnets are old ideas. 
 - But the enablers  - hardware - attention is all you need paper tranformers - big corpus of information made it happen 
+
 - is it the big ideas that have changed or is it environment - example guns germs and steel; "writing have been around for long, but only when everybody reads it makes sence for a gutenberg revolution"
-- leeds to current day. Intelligence need enablers - otherwise all you have is more horse powers - ""callin ai revolution an intelligence explosion is like calling the industrial revolution a horsepower explosion"". This is macro scale, what does that mean for lynx in a microscale. Need enablers, need to create oportunitites for radical change. Data - Innovation - Trust
+
+- leeds to current day. This is macro scale, what does that mean for lynx in a microscale. Need enablers, need to create oportunitites for radical change. Data - Innovation - Trust
+
+- replacement vs augmentation
+
 
 ### line of thougth - impact
 """“The future is already here – it's just not evenly distributed.”
 ― William Gibson"""
 - not. Andrej Karpathey of its every mans hand atm
+- leveling the field
+
+sunken cost fallacy moot
+
+redo somthing you know the internals of easier then ever
+
+probablistic vs determenistic programing
+
+examples structure inputs then tests, verifications, analysis - new corner stones
+
+
+
 
 ### current techniques
 - context aware
@@ -45,6 +64,8 @@
 
 
  - still a token predicting engine
+    - prompt engieneering 
+    - agents
     - new resoning 
     - prompt methods
     - temperature, ktop, ptop 
@@ -52,6 +73,7 @@
     - different types 4o o family reasoning
     - deep seek instroduced visual resong - different languages (time?)
     - context window
+
 
 - agents , mcp
     - applications of the token workflow
@@ -62,18 +84,8 @@
     - the foundation modelrace - china and us
     - dystopic predictions; https://ai-2027.com/ 
 
-## Not solved
-    understand the physical world 
-    - movie / image generation. Movie a resonable compression of the physical world
-    consistent memory. 
-    resoning 
-    planing
 
 
-    
-## multimodal 
-    - text is perhaps the best area
-    - image - to text - then interpret language is compression of knowledge 
 
 
 ## arc - benchmarks 

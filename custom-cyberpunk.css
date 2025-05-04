@@ -13,8 +13,8 @@
 }
 
 .reveal {
-  background-image: url('Lynx_Logo_Color.svg');
-  background-position: top right;
+  /* background-image: url('https://images.unsplash.com/photo-1515630278258-407f66498911'); */
+  
   background-size: cover;
   background-blend-mode: overlay;
   position: relative;

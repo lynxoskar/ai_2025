@@ -1,0 +1,146 @@
+:root {
+  --neon-pink: #ff2e6a;
+  --neon-blue: #00fff9;
+  --neon-purple: #b829ea;
+  --dark-bg: #0a0a0f;
+}
+
+.reveal {
+  /* Create a dark gradient background with cyberpunk feel */
+  background: linear-gradient(
+    135deg,
+    var(--dark-bg) 0%,
+    #1a1a2e 50%,
+    #16213e 100%
+  );
+  position: relative;
+}
+
+/* Add the Lynx logo to the top left corner */
+.reveal::before {
+  content: '';
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 100px;  /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-image: url('./Lynx_Logo_Color.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8; /* Makes the logo slightly transparent */
+  z-index: 1000;
+}
+
+/* Style for slide backgrounds */
+.reveal .slides > section:not(:has(.mermaid)) {
+  background: radial-gradient(
+    circle at center,
+    rgba(30, 30, 50, 0.25) 0%,
+    rgba(30, 30, 50, 0.4) 100%
+  );
+  border: 1px solid rgba(0, 255, 249, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 249, 0.2);
+}
+
+/* Headings with cyberpunk effect */
+.reveal h1 {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue),
+               0 0 20px var(--neon-blue),
+               0 0 30px var(--neon-blue);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.reveal h2, .reveal h3 {
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px var(--neon-pink);
+}
+
+/* Text styling */
+.reveal p {
+  color: #ffffff;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Add a subtle grid pattern to the background */
+.reveal::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(16, 16, 28, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(16, 16, 28, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Links with neon effect */
+.reveal a {
+  color: var(--neon-purple);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.reveal a:hover {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+
+/* Code blocks with cyberpunk theme */
+.reveal pre {
+  background: rgba(10, 10, 15, 0.9);
+  border: 1px solid var(--neon-blue);
+  box-shadow: 0 0 10px rgba(0, 255, 249, 0.2);
+}
+
+/* List items with custom bullets */
+.reveal ul li::before {
+  content: '›';
+  color: var(--neon-pink);
+  margin-right: 10px;
+} 
+
+/* Hand-drawn font for Mermaid diagrams */
+.mermaid {
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Architects Daughter', 'Indie Flower', cursive !important;
+}
+
+/* Hand-drawn node/edge style */
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node ellipse,
+.mermaid .node circle {
+  stroke: #222 !important;
+  stroke-width: 2.5px !important;
+  fill: #fffbe7 !important; /* light yellowish paper */
+  filter: url(#roughPaper);
+}
+
+.mermaid .edgePath path {
+  stroke: #222 !important;
+  stroke-width: 2.5px !important;
+  stroke-dasharray: 4, 2;
+}
+
+.mermaid .label {
+  font-family: inherit !important;
+  font-size: 1.1em !important;
+  font-style: italic;
+}
+
+/* Optional: add a subtle paper texture background */
+.mermaid {
+  background: repeating-linear-gradient(
+    135deg,
+    #fffbe7,
+    #fffbe7 10px,
+    #f7f3e3 10px,
+    #f7f3e3 20px
+  );
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0002;
+  padding: 8px;
+}
