@@ -2,9 +2,6 @@
 
 ---
 
-
-Below is a summary of temperature and other key parameters discussed in the context of prompt engineering for large language models (LLMs). These parameters—temperature, top-K, top-P, and output length—control the behavior, creativity, and coherence of the model's responses. To make the explanation clearer, I’ve included Mermaid diagrams to visually represent how each parameter influences the output generation process.
-
 ---
 
 ## Summary of Key Parameters

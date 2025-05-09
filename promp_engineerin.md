@@ -12,18 +12,15 @@ Based on your request, I’ve reviewed the document "Prompt Engineering_v7.pdf" 
 
 The document "Prompt Engineering_v7.pdf" explores various techniques for crafting effective prompts to guide large language models (LLMs) in generating accurate and relevant outputs. Below is a summary of each technique, accompanied by a Mermaid flowchart to illustrate its structure or flow.
 
----
+--
 
 1. **General Prompting / Zero Shot**  
-   **Summary:** This is the simplest prompting method, where a task description and initial text are provided without any examples. The LLM relies solely on its pre-trained knowledge to produce an output, making it a "zero-shot" approach.  
+   **Summary:** This is the simplest prompting method, where a task description and initial text are provided without any examples. The LLM relies solely on its pre-trained knowledge to produce an output, making it a "zero-shot" approach.    
+    **Mermaid Diagram:**
+   ```mermaid
+   graph LR
+   A[Prompt] --> B[Output]
    
-   ![](./diagrams/context_prompt.svg)
-
-   ```
-   ``` what is this```
-   
----
-
 --
 
 2. **One-Shot & Few-Shot Prompting**  
@@ -34,6 +31,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    graph LR
    A[Prompt with Examples] --> B[Output]
    ```
+--
 
 3. **System Prompting**  
    **Summary:** This technique defines the overarching context or purpose for the LLM, such as specifying the task (e.g., classification, translation) or output format (e.g., JSON), guiding the model’s behavior at a high level.  
@@ -43,7 +41,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    A[System Instruction] --> B[Task Prompt] --> C[Output]
    ```
 
----
+--
 
 4. **Contextual Prompting**  
    **Summary:** Provides specific background details or task-relevant information to the prompt, enabling the LLM to tailor its response more accurately to the given scenario.  
@@ -52,6 +50,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    graph LR
    A[Context] --> B[Task Prompt] --> C[Output]
    ```
+--
 
 5. **Role Prompting**  
    **Summary:** Assigns a specific role or persona to the LLM (e.g., travel guide, teacher), directing it to generate responses consistent with that role’s perspective, tone, or expertise.  
@@ -60,6 +59,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    graph LR
    A[Role Assignment] --> B[Task Prompt] --> C[Output]
    ```
+--
 
 6. **Step-Back Prompting**  
    **Summary:** The LLM is first prompted with a general question related to the task to activate broader knowledge, then the answer is used in a subsequent prompt to address the specific task, enhancing reasoning and accuracy.  
@@ -68,6 +68,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    graph LR
    A[General Question] --> B[Answer to General Question] --> C[Specific Task Prompt] --> D[Output]
    ```
+--
 
 7. **Chain of Thought (CoT)**  
    **Summary:** Encourages the LLM to produce intermediate reasoning steps before delivering the final answer, improving performance on complex tasks by making the thought process explicit.  
@@ -76,6 +77,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    graph LR
    A[Prompt] --> B[Reasoning Step 1] --> C[Reasoning Step 2] --> D[Final Answer]
    ```
+--
 
 8. **Self-Consistency**  
    **Summary:** The LLM generates multiple responses to the same prompt using varied reasoning paths (often with higher temperature settings), then selects the most consistent answer to improve reliability.  
@@ -90,6 +92,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    D --> E
    E --> F[Final Output]
    ```
+--
 
 9. **Tree of Thoughts (ToT)**  
    **Summary:** Explores multiple reasoning paths or ideas in a branching structure, allowing the LLM to consider various possibilities before converging on a final output, useful for deliberate problem-solving.  
@@ -105,6 +108,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
    E --> G
    F --> G
    ```
+--
 
 10. **ReAct (Reason & Act)**  
     **Summary:** Combines reasoning and action, where the LLM first reasons about the task and then performs an action (e.g., generating text or code) based on that reasoning, synergizing thought and execution.  
@@ -113,6 +117,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
     graph LR
     A[Prompt] --> B[Reasoning] --> C[Action] --> D[Output]
     ```
+--
 
 11. **Automatic Prompt Engineering**  
     **Summary:** Automates the creation or optimization of prompts through an iterative process of generating prompts, evaluating responses, and refining them, reducing manual effort in prompt design.  
@@ -124,6 +129,7 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
     C --> D[Optimize Prompt]
     D --> A
     ```
+--
 
 12. **Code Prompting**  
     **Summary:** Utilizes prompts to perform code-related tasks, such as writing, explaining, translating, or debugging code, leveraging the LLM’s ability to handle programming languages.  
@@ -132,4 +138,4 @@ The document "Prompt Engineering_v7.pdf" explores various techniques for craftin
     graph LR
     A[Prompt for Code Task] --> B[Perform Code Task] --> C[Output]
     ```
-
+---

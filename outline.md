@@ -14,14 +14,14 @@
 - ideas have been around. Deep learing and neuralnets are old ideas. 
 - But the enablers  - hardware - attention is all you need paper tranformers - big corpus of information made it happen 
 
-- is it the big ideas that have changed or is it environment - example guns germs and steel; "writing have been around for long, but only when everybody reads it makes sence for a gutenberg revolution"
+- is it the big ideas that have changed or is it environment - example guns germs and steel; "writing have been around for long, but only when enouogh people reads it makes sence for a gutenberg revolution"
 
 - leeds to current day. This is macro scale, what does that mean for lynx in a microscale. Need enablers, need to create oportunitites for radical change. Data - Innovation - Trust
 
 - replacement vs augmentation
 
 
-### line of thougth - impact
+### line of thougth - impact and realisaitons
 """“The future is already here – it's just not evenly distributed.”
 ― William Gibson"""
 - not. Andrej Karpathey of its every mans hand atm
@@ -34,6 +34,8 @@ redo somthing you know the internals of easier then ever
 probablistic vs determenistic programing
 
 examples structure inputs then tests, verifications, analysis - new corner stones
+
+probablistic programs vs deterministic programs
 
 
 
@@ -52,15 +54,7 @@ examples structure inputs then tests, verifications, analysis - new corner stone
 
 
 ## idea - timeline from last presenation 
- - the foundation models    
-    previous google bert, meta laba, openai 
-    today - many new players. Not sure who wins. 
- - snowflake etal bows out of the race, works on applications
 
- - CHATGPT usage nov23 100 million active users
-    december24 300 million users (pro subscription 200$ a month)
-    feb25 400 million
-    92% of Fortune 500 companies by 2024
 
 
  - still a token predicting engine

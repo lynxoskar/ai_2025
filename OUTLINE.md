@@ -34,7 +34,9 @@ start -
     look into 7 misstakes podcast
     ""The future is allready here, its ""look into Adrej Karpathys post about ai being the equalizer. 
 
-link https://x.com/scaling01/status/1911844152578355317 ""just one more until chat-gpt5""
+link 
+
+https://x.com/scaling01/status/1911844152578355317 
 
 4.  Revisit an old ai talk - an llm is still only a next token machine.
     - explain temperature, k - p configuration. Help files and flows that have been discovered making the job easier for the llm. Describing what manual steps one can do make the llm useage better. 
