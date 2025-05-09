@@ -93,7 +93,11 @@ My personal current understanding / world model of what currently is taking plac
 
 ![](./diagrams/poly_table.png)
 
---
+---
+
+![](./pics/power_generation.jpg)
+
+---
 
 #### The Gutenberg Analogy
 
