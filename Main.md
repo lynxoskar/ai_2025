@@ -1,55 +1,69 @@
 ---
-customTheme: cyber2
+
 enableMenu: false
+customTheme: cyber2
 
 
 ---
-
-
----
-
-
----
-
 
 <!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
-## Ai 2025
+# Ai 2025
 
 ---
 
-### Purpose Disposition
+<!-- .slide: -->
+### gartner hype cycle
 
-My personal current understanding / world model of what currently is taking place
 
-- trends 
-- core techniques
-- implications for organisations
+![](./pics/Gartner_Hype_Cycle.svg)
 
 ---
-
-<!-- .slide: data-background-opacity="0.1" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
 > **Calling the Ai-revolution an intelligence explosion is like calling the industralization an horse power explosion** - Tamay Besiroglu 
+
+
+<aside class="notes">Tamay is a researcher focusing on the Economics of Computing and big-picture trends in machine learning. Previously, he led strategy for Metaculus, consulted for the UK Government, interned at the Future of Humanity Institute at the University of Oxford, and Bloomberg. Tamay received an MPhil in Economics from the University of Cambridge in 2020.</aside>
+
+---
+
+### Agenda
+
+> Trends 
+
+> Techniques
+
+> Implications 
+
+<aside class="notes">https://hai-production.s3.amazonaws.com/files/hai_ai_index_report_2025.pdf</aside>
+
+---
+https://hai.stanford.edu/ai-index/2025-ai-index-report
 
 ---
 
 ## timeline
-
+<!-- .slide: data-fullscreen-->
 ![](./diagrams/timeline.png)
+
+<aside class="notes">notes here are - terminal based tools and valuation and growth of LLM using apps</aside>
 
 ---
 
 > The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.” 
 
+
+<aside class="notes"></aside>
+
 ---
 
 ### enablers
 
-1. **Hardware & Compute**
-   - GPU/TPU advancements.
-   - Massive build up
-   - Availability of infrastucture
+1. Hardware
+2. Capital
+3. People
+4. Algoritms
+5. Data
 
 --
 
@@ -67,25 +81,28 @@ My personal current understanding / world model of what currently is taking plac
 
 ![](./pics/education.png)
 
----
 
-2. **Data & Corpus**
+<aside class="notes">
+**Data & Corpus**
    - Massive text datasets for training
    - Not only seminal, offical texts but conversations and peoples use internet for two decades plus.
+
+   
+</aside>
 
 ---
 
 ## Whos doing it
-
+--
 
 
 ![](./diagrams/sectors.png)
 
----
+--
 
 ![](./diagrams/by_region.png)
 
----
+--
 
 ![](./diagrams/polymarket.png)
 
@@ -93,7 +110,7 @@ My personal current understanding / world model of what currently is taking plac
 
 ![](./diagrams/poly_table.png)
 
----
+--
 
 ![](./pics/power_generation.jpg)
 
@@ -101,7 +118,7 @@ My personal current understanding / world model of what currently is taking plac
 
 #### The Gutenberg Analogy
 
-> "Writing has been around for long, but only when everybody reads it makes sense for a Gutenberg revolution"
+> "Writing has been around for long, but only when many can read it makes sense for a Gutenberg revolution"
 
 - Ideas existed for decades
 - Enablers made implementation possible
@@ -114,7 +131,17 @@ My personal current understanding / world model of what currently is taking plac
 
 --
 
+![](./pics/next_token_machine.png)
+
+
+<aside class="notes">At their core, LLMs operate as prediction engines that take sequential text as input and predict the next token based on the data they were trained on. This process is repeated, adding the predicted token to the sequence to predict the subsequent one. The prediction of the next token is based on the relationships learned from the vast amounts of text in the LLM's training data. </aside>
+
+--
+
 ### 1. Temperature
+
+<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).</aside>
+
 - Temperature controls the probability distribution of the next token.
   - **Low Temperature (e.g., 0)**: The model becomes deterministic, always choosing the most probable token. This is great for precise, factual responses.
   - **High Temperature (e.g., close to 1 or higher)**: The model introduces more randomness, making less probable tokens more likely. This boosts creativity and diversity.
@@ -215,7 +242,6 @@ System, contextual, and role prompting: These techniques allow you to set the ov
    A[General Question] --> B[Answer to General Question] --> C[Specific Task Prompt] --> D[Output]
    ```
 
-
 --
 
 
@@ -257,47 +283,11 @@ System, contextual, and role prompting: These techniques allow you to set the ov
    F --> G
    ```
 
---
-
-
-10. **ReAct (Reason & Act)**  
-    Combines reasoning and action, where the LLM first reasons about the task and then performs an action (e.g., generating text or code) based on that reasoning, synergizing thought and execution.  
-    
-    ```mermaid
-    graph LR
-    A[Prompt] --> B[Reasoning] --> C[Action] --> D[Output]
-
-    ```
-
---
-
-
-11. **Automatic Prompt Engineering**  
-    **Summary:** Automates the creation or optimization of prompts through an iterative process of generating prompts, evaluating responses, and refining them, reducing manual effort in prompt design.  
-    **Mermaid Diagram:**
-    ```mermaid
-    graph LR
-    A[Initial Prompt] --> B[Generate Response]
-    B --> C[Evaluate Response]
-    C --> D[Optimize Prompt]
-    D --> A
-    ```
-
---
-
-
-12. **Code Prompting**  
-    Utilizes prompts to perform code-related tasks, such as writing, explaining, translating, or debugging code, leveraging the LLM’s ability to handle programming languages.  
-    
-    ```mermaid
-    graph LR
-    A[Prompt for Code Task] --> B[Perform Code Task] --> C[Output]
-    ```
-
 ---
 
 ### agents
 > Ai agents are just a bunch of python scripts and an api key  
+
 
 ---
 
@@ -435,14 +425,157 @@ maps_search_places = {
 
 ---
 
+>"The primary audience of your thing (product, service, library, …) is now an LLM, not a human.
+LLMs don’t like to navigate, they like to scrape.
+LLMs don’t like to see, they like to read.
+LLMs don’t like to click, they like to curl."- Andrej Karpathy 
+
+---
+
 If an LLM model is a destilled version of all text. all use  of it is a way to narrow the scope for its search or associciation 
 
 ---
 
-<!-- .slide: data-fullscreen-->
+```json
+GPT-4 release was here (0314)
 
-<div class="tweet"  data-src="https://x.com/scaling01/status/1911844152578355317"></div>
+gpt-4-0613
+gpt-4-1106-vision-preview
+gpt-4-1106-preview
+gpt-4-0125-preview
+gpt-4-turbo-2024-04-09
+gpt-4-turbo
+chatgpt-4o-latest
+text-moderation-007
+text-moderation-latest
+omni-moderation-2024-09-26
+omni-moderation-latest
+text-embedding-ada-002
+text-embedding-3-large
+text-embedding-3-small
+DALL·E 2
+DALL·E 3
+TTS HD
+TTS
+Whisper
+gpt-4o-mini-transcribe
+gpt-4o-transcribe
+gpt-4o-mini-tts
+babbage-002
+davinci-002
+gpt-3.5-turbo
+computer-use-preview-2025-03-11
+computer-use-preview
+gpt-4o-search-preview-2025-03-11
+gpt-4o-search-preview
+gpt-4o-mini-search-preview-2025-03-11
+gpt-4o-mini-search-preview
+o1-mini-2024-09-12
+o3-mini-2025-01-31
+o3-mini
+o1-pro-2025-03-19
+o1-pro
+o1-preview-2024-09-12
+o1-2024-12-17
+o1
+gpt-4o-mini-realtime-preview-2024-12-17
+gpt-4o-mini-realtime-preview
+gpt-4o-mini-audio-preview-2024-12-17
+gpt-4o-mini-audio-preview
+gpt-4o-mini-2024-07-18
+gpt-4o-mini
+gpt-4o-realtime-preview-2024-10-01
+gpt-4o-realtime-preview-2024-12-17
+gpt-4o-realtime-preview
+gpt-4o-audio-preview-2024-10-01
+gpt-4o-audio-preview-2024-12-17
+gpt-4o-audio-preview
+gpt-4o-2024-05-13
+gpt-4o-2024-11-20
+gpt-4o-2024-08-06
+gpt-4o
+gpt-4.5-preview-2025-02-27
+gpt-4.5-preview
+gpt-4.1-nano-2025-04-14
+gpt-4.1-nano
+gpt-4.1-mini-2025-04-14
+gpt-4.1-mini
+gpt-4.1-2025-04-14
+gpt-4.1
 
 ---
 
-![](./diagrams/multi_agent.svg)
+![](./pics/pareto_frontier_race.jpg)
+
+<aside class="notes"> the frontier labs find specialiced llms or find prompting techniques that allows for iterating with prompting techiques. Big capable vs many smalls is researched heavily</aside>
+
+
+---
+
+> "The future is already here – it's just not evenly distributed." - William Gibson
+
+---
+
+
+
+---
+
+Implications for lynx
+
+
+> “There is nothing more dangerous than yesterday’s success - Carl Eschenbach”
+
+---
+
+depending on where you put the fenomen on the gartner hype graph
+
+depending on you view this as a fixed pie or massive value proposition
+
+depending on 
+
+- faster horses. 1 horse for every 10. Or a new world with highways and cars.
+
+---
+
+## oodla - loop
+ observe
+ origent
+ descide
+ act
+
+ the speed of this loop during turbulent times is paramount
+
+ ---
+
+ case study; data platform
+
+ - first conferences and discussions 2022
+ - article seminars; research, systems,exectution, data 
+ - 2025; 3 month 3 ppl fulltime 1 fulltime consultant for a prestudy; 
+  descided what tools to use.
+ - what whould the equity group have done during the same insights 3 years ago?
+
+ is this our oodla loop for change?
+
+---
+
+Mentimeter - 
+  risk vs reward
+  fear vs hope 
+  Process vs Outcome driven development
+  Task vs Goal oriented leadership
+
+
+---
+
+industry
+ - CEO of snowflake
+
+ - CTO of Palantir
+
+ - CEO of Klarna
+
+ - CEO of 80/20
+
+
+

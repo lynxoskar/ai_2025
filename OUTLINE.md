@@ -4,22 +4,23 @@ https://www.youtube.com/watch?v=DTG393KqOGc
 https://youtu.be/qF2PsdSxlXI?si=2O7cSAmxzBeegAEL
 //claude code
 https://www.anthropic.com/engineering/claude-code-best-practices
-//STANFORD 2024 REPORT
-https://hai.stanford.edu/ai-index/2024-ai-index-report
+//STANFORD 2025 REPORT
+https://hai.stanford.edu/ai-index/2025-ai-index-report
 //clickhouse mcp db agent
 https://clickhouse.com/blog/agenthouse-demo-clickhouse-llm-mcp?utm_content=buffere886a&utm_medium=social&utm_source=twitter&utm_campaign=buffer
 //agents
 https://x.com/i/status/1907412051787657516
 
 
-im doing a presentation on ai for my company. this is my inital plan 
 
-start - 
+
+
 
 1. Timeline with pivotal moments of ai from the start with deepseek and to current day
     - enumerate llms at last presentation 2years ago. 
     - enumerate todays offering of fronteir LLM models and products. normal up till max 200$ offerings
     
+
 
 2. Enablers - making the ai happen.  
 
@@ -30,19 +31,33 @@ start -
     Making a referece to guns germs and steels example of textprinting need reading consumers to be any revolution.... //look up citation
     enablers and the ability to adopt is key. Yesterdays success is the most dangerous thing you face...
 
-3.  Current uptake and monies spend on ai by companies. Lesson learnt from them. 
+  Current uptake and monies spend on ai by companies. Lesson learnt from them. 
     look into 7 misstakes podcast
     ""The future is allready here, its ""look into Adrej Karpathys post about ai being the equalizer. 
+
+Current rate of progress in LLM algoritms and techiques
+
 
 link 
 
 https://x.com/scaling01/status/1911844152578355317 
 
 4.  Revisit an old ai talk - an llm is still only a next token machine.
+
     - explain temperature, k - p configuration. Help files and flows that have been discovered making the job easier for the llm. Describing what manual steps one can do make the llm useage better. 
+
     - Using the llm to write the instructions in iterations. walk into agents.. just a bunch of python code and api key...
+
+
     ###
-    At their core, LLMs operate as prediction engines that take sequential text as input and predict the next token based on the data they were trained on. This process is repeated, adding the predicted token to the sequence to predict the subsequent one. The prediction of the next token is based on the relationships learned from the vast amounts of text in the LLM's training data. - compression?
+    At their core, LLMs operate as prediction engines that take sequential text as input and predict the next token based on the data they were trained on. This process is repeated, adding the predicted token to the sequence to predict the subsequent one. The prediction of the next token is based on the relationships learned from the vast amounts of text in the LLM's training data. 
+
+    Essentlially a destilled / compressed information set.
+
+    Its a probablity engine with a non determenistic output.
+
+        - 
+
     -
     Prompt engineering is the process of designing high-quality prompts that guide LLMs to produce accurate outputs. When you write a prompt, you are essentially trying to set up the LLM to predict the desired sequence of tokens that constitutes your answer or output. Effective prompt engineering involves understanding how the model works and then tinkering with various aspects of the prompt, such as word choice, style, tone, structure, and the context provided, to achieve the desired outcome
     General prompting/zero-shot prompting: This involves providing a task description without any examples. The LLM relies solely on its pre-existing knowledge to generate a response.

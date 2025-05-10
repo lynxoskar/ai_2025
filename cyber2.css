@@ -32,7 +32,7 @@
 }
 
 /* Style for slide backgrounds */
-.reveal .slides > section:not(:has(.mermaid)) {
+/* .reveal .slides > section:not(:has(.mermaid)) {
   background: radial-gradient(
     circle at center,
     rgba(30, 30, 50, 0.25) 0%,
@@ -40,7 +40,7 @@
   );
   border: 1px solid rgba(0, 255, 249, 0.1);
   box-shadow: 0 0 20px rgba(0, 255, 249, 0.2);
-}
+} */
 
 /* Headings with cyberpunk effect */
 .reveal h1 {
@@ -91,17 +91,11 @@
 
 /* Code blocks with cyberpunk theme */
 .reveal pre {
-  background: rgba(10, 10, 15, 0.9);
+  /* background: rgba(10, 10, 15, 0.9); */
   border: 1px solid var(--neon-blue);
   box-shadow: 0 0 10px rgba(0, 255, 249, 0.2);
 }
-
-/* List items with custom bullets */
-.reveal ul li::before {
-  content: '›';
-  color: var(--neon-pink);
-  margin-right: 10px;
-} 
+ 
 
 /* Hand-drawn font for Mermaid diagrams */
 .mermaid {
@@ -133,14 +127,14 @@
 
 /* Optional: add a subtle paper texture background */
 .mermaid {
-  background: repeating-linear-gradient(
+  background: linear-gradient(
     135deg,
-    #fffbe7,
-    #fffbe7 10px,
-    #f7f3e3 10px,
-    #f7f3e3 20px
-  );
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #0002;
-  padding: 8px;
+    rgba(10, 10, 15, 0.95) 0%,
+    rgba(26, 26, 46, 0.95) 50%,
+    rgba(22, 33, 62, 0.95) 100%
+  ) !important;
+  border: 1px solid rgba(0, 255, 249, 0.2) !important;
+  box-shadow: 0 0 20px rgba(0, 255, 249, 0.1) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
 }

@@ -21,7 +21,7 @@
 - replacement vs augmentation
 
 
-### line of thougth - impact and realisaitons
+### line of thougth - impact and realisation
 """“The future is already here – it's just not evenly distributed.”
 ― William Gibson"""
 - not. Andrej Karpathey of its every mans hand atm
