@@ -63,7 +63,7 @@ timeline
          : OpenAI Codex - terminal
 ```
 
-<aside class="notes">notes here are - terminal based tools and valuation and growth of LLM using apps</aside>
+<aside class="notes">notes here are - terminal based tools and valuation and growth of LLM using apps code is very much in its own space. Maths and logic</aside>
 
 ---
 
@@ -695,12 +695,25 @@ LLMs don’t like to click, they like to curl."- Andrej Karpathy
 
 ---
 
+<!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
+## Take aways
 
+---
 
-If an LLM model is a destilled version of all text. all use  of it is a way to narrow the scope for its search or associciation 
+Understand the strat...
+
+A LLM model is a destilled version of all text. You want to narrow the scope for its search 
+
+--
+
+So its not right..
 
 Probablistic engine not deterministic. Tests, examples, reiteration building determenistic behaviour is going to be the new skill. 
+
+--
+
+Sunken costs beware...
 
 Massive codebases with known behaviour and complete example set of input/output are now not worth. Reimplementations are pretty much costless
 
@@ -752,6 +765,8 @@ I more driven by results or size of org I manage?
 ---
 
 ## Mentimerter time
+
+https://www.mentimeter.com/app/presentation/al79bou5b35scyzkv98y6qsbo2ydin2a/edit?question=nhmd4i2vd4xq
 
 - hype or new world
 
