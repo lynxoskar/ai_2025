@@ -713,11 +713,22 @@ Probablistic engine not deterministic. Tests, examples, reiteration building det
 
 --
 
+This is a skill. Learn mindshift. The real payoff only if we adapt and learn.
+Wont be free
+
+--
+
 Sunken costs beware...
 
 Massive codebases with known behaviour and complete example set of input/output are now not worth. Reimplementations are pretty much costless
 
----
+--
+
+Expose all data
+
+--
+
+
 
 <!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
