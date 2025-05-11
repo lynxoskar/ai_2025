@@ -111,5 +111,4 @@ print(response)
 
 In summary, LangChain transforms “some Python code and an API key” into a structured framework for building AI agents that can reason, act, and remember. It’s like a toolbox for orchestrating LLMs, tools, and data to create intelligent, task-driven systems. If you want to dive deeper into a specific LangChain feature (e.g., memory, tools, or RAG) or see a more complex example, let me know!
 
--- langchain et al
-inludes 
+ 

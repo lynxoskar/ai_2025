@@ -8,7 +8,7 @@ customTheme: cyber2
 
 <!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
-# Ai 2025
+## Ai 2025
 
 ---
 
@@ -53,7 +53,13 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 > The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.” 
 
 
-<aside class="notes"></aside>
+<aside class="notes">hello</aside>
+
+---
+
+<!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
+
+## Trends
 
 ---
 
@@ -62,7 +68,7 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 1. Hardware
 2. Capital
 3. People
-4. Algoritms
+4. Algorithms
 5. Data
 
 --
@@ -76,6 +82,10 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 --
 
 ![](./pics/spendings.png)
+
+--
+
+![](./pics/compute_performance.jpg)
 
 --
 
@@ -93,7 +103,6 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 ---
 
 ## Whos doing it
---
 
 
 ![](./diagrams/sectors.png)
@@ -116,18 +125,89 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 
 ---
 
-#### The Gutenberg Analogy
+---
+## got llm's -Xbit
 
-> "Writing has been around for long, but only when many can read it makes sense for a Gutenberg revolution"
 
-- Ideas existed for decades
-- Enablers made implementation possible
-- Critical mass of adoption needed
-- Infrastructure enables innovation
+```json
+GPT-4 release was here (0314)
+gpt-4-0613
+gpt-4-1106-vision-preview
+gpt-4-1106-preview
+gpt-4-0125-preview
+gpt-4-turbo-2024-04-09
+gpt-4-turbo
+chatgpt-4o-latest
+text-moderation-007
+text-moderation-latest
+omni-moderation-2024-09-26
+omni-moderation-latest
+text-embedding-ada-002
+text-embedding-3-large
+text-embedding-3-small
+DALL·E 2
+DALL·E 3
+TTS HD
+TTS
+Whisper
+gpt-4o-mini-transcribe
+gpt-4o-transcribe
+gpt-4o-mini-tts
+babbage-002
+davinci-002
+gpt-3.5-turbo
+computer-use-preview-2025-03-11
+computer-use-preview
+gpt-4o-search-preview-2025-03-11
+gpt-4o-search-preview
+gpt-4o-mini-search-preview-2025-03-11
+gpt-4o-mini-search-preview
+o1-mini-2024-09-12
+o3-mini-2025-01-31
+o3-mini
+o1-pro-2025-03-19
+o1-pro
+o1-preview-2024-09-12
+o1-2024-12-17
+o1
+gpt-4o-mini-realtime-preview-2024-12-17
+gpt-4o-mini-realtime-preview
+gpt-4o-mini-audio-preview-2024-12-17
+gpt-4o-mini-audio-preview
+gpt-4o-mini-2024-07-18
+gpt-4o-mini
+gpt-4o-realtime-preview-2024-10-01
+gpt-4o-realtime-preview-2024-12-17
+gpt-4o-realtime-preview
+gpt-4o-audio-preview-2024-10-01
+gpt-4o-audio-preview-2024-12-17
+gpt-4o-audio-preview
+gpt-4o-2024-05-13
+gpt-4o-2024-11-20
+gpt-4o-2024-08-06
+gpt-4o
+gpt-4.5-preview-2025-02-27
+gpt-4.5-preview
+gpt-4.1-nano-2025-04-14
+gpt-4.1-nano
+gpt-4.1-mini-2025-04-14
+gpt-4.1-mini
+gpt-4.1-2025-04-14
+gpt-4.1
 
 ---
 
-### Still a next token machine
+![](./pics/pareto_frontier_race.jpg)
+
+<aside class="notes"> the frontier labs find specialiced llms or find prompting techniques that allows for iterating with prompting techiques. Big capable vs many smalls is researched heavily</aside>
+
+
+---
+
+<!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
+
+## Still a next token machine
+Techniques
 
 --
 
@@ -180,7 +260,9 @@ When you write a prompt, you are essentially trying to set up the LLM to predict
 
 --
 
+<aside class="notes">
 One-shot and few-shot prompting: These techniques provide the LLM with one or a few examples to demonstrate the desired output format or pattern. This helps the model understand the task better and can steer it towards a specific type of response.
+</aside>
 
 1. **Zero Shot**  
    This is the simplest prompting method, where a task description and initial text are provided without any examples. The LLM relies solely on its pre-trained knowledge to produce an output, making it a "zero-shot" approach.    
@@ -353,13 +435,142 @@ def main():
     # Execute tools based on reasoning
 ```
 
+--
+
+### How LangChain Enables AI Agents
+- **Reason**: Use LLMs to plan or make decisions.
+- **Act**: Call tools to interact with the world (e.g., APIs, databases).
+- **Remember**: Maintain context across interactions.
+- **Adapt**: Handle diverse tasks by swapping tools or prompts.
+
+--
+
+### LangChain for AI Agents
+1. **LLMs and Chat Models**:
+   - LangChain integrates with LLMs (e.g., OpenAI’s GPT, Anthropic’s Claude, or open-source models via Hugging Face) using API keys.
+   - It abstracts the interaction, allowing agents to call models for generating text, answering questions, or making decisions.
+
+--
+
+2. **Prompt Templates**:
+   - LangChain provides templating to craft structured prompts that guide the LLM’s behavior. For example, an agent might use a template like:  
+     ```
+     You are a helpful assistant. Given the user query: {query}, provide a concise answer and suggest a follow-up action.
+     ```
+   - This ensures consistent and task-specific responses, critical for agents performing roles like customer support or task planning.
+
+--
+
+3. **Memory**:
+   - Agents need context to maintain coherent interactions. LangChain offers memory modules to store and retrieve conversation history or task state.
+   - Types include:
+     - **ConversationBufferMemory**: Stores the full chat history.
+     - **ConversationSummaryMemory**: Summarizes past interactions to save tokens.
+     - **VectorStore-backed Memory**: Uses embeddings to retrieve relevant past interactions for long-term context.
+   - Example: An agent helping with project management can recall prior tasks or user preferences.
+
+--
+
+4. **Tools**:
+   - LangChain allows agents to interact with external systems via tools, which are Python functions or APIs. Examples:
+     - **Web Search**: Use APIs like SerpAPI to fetch real-time data.
+     - **Calculators**: Integrate with libraries like `numexpr` for math tasks.
+     - **Custom Tools**: Write Python functions for specific tasks, like querying a database.
+   - Agents decide which tool to use based on the task, often guided by the LLM’s reasoning.
+
+--
+
+5. **Chains**:
+   - Chains are sequences of actions (e.g., prompt → LLM → tool → output). LangChain’s `SequentialChain` or `RouterChain` lets agents follow multi-step workflows.
+   - Example: A research agent might:
+     1. Take a query.
+     2. Search the web.
+     3. Summarize findings.
+     4. Store results in memory.
+
+--
+
+6. **Agents**:
+   - LangChain’s agent module combines LLMs, tools, and memory to create autonomous systems. Key agent types:
+     - **ReAct (Reasoning + Acting)**: The agent reasons about the task, selects a tool, acts, observes the result, and repeats until the goal is met.
+     - **Plan-and-Execute**: The agent plans steps upfront, then executes them.
+     - **Tool-calling Agents**: Directly map tasks to specific tools based on LLM output.
+   - Example: A ReAct agent tasked with “Find the weather in Tokyo” might:
+     1. Reason: “I need real-time weather data.”
+     2. Select: A weather API tool.
+     3. Act: Query the API.
+     4. Return: “It’s 22°C and sunny in Tokyo.”
+
+--
+
+7. **Vector Stores and Retrieval**:
+   - LangChain integrates with vector databases (e.g., FAISS, Pinecone) to store and retrieve information using embeddings.
+   - For agents, this enables retrieval-augmented generation (RAG), where the agent pulls relevant documents or past interactions to inform its response.
+   - Example: A customer support agent retrieves product manuals to answer technical questions.
+
+
+--
+
+### Example: Building a Simple LangChain Agent
+Here’s a basic Python example of a LangChain agent that answers questions using a web search tool:
+
+```python
+from langchain_openai import ChatOpenAI
+from langchain.agents import initialize_agent, Tool
+from langchain.utilities import SerpAPIWrapper
+
+# Set up the LLM (requires an API key)
+llm = ChatOpenAI(model="gpt-4", openai_api_key="your_openai_api_key")
+
+# Set up a web search tool
+search = SerpAPIWrapper(serpapi_api_key="your_serpapi_api_key")
+tools = [
+    Tool(
+        name="Search",
+        func=search.run,
+        description="Useful for answering questions about current events or data."
+    )
+]
+
+# Initialize the agent
+agent = initialize_agent(
+    tools=tools,
+    llm=llm,
+    agent_type="zero-shot-react-description",
+    verbose=True
+)
+
+# Run the agent
+response = agent.run("What’s the latest news on AI advancements?")
+print(response)
+```
+
+### Workflow in the Example
+1. **Input**: User asks about AI advancements.
+2. **Reasoning**: The agent (using ReAct) decides a web search is needed.
+3. **Action**: Calls the SerpAPI tool to fetch recent articles.
+4. **Output**: Summarizes findings and returns a response.
+
+### Why LangChain for AI Agents?
+- **Flexibility**: Mix and match LLMs, tools, and memory types.
+- **Scalability**: Handle complex workflows with chains and retrieval.
+- **Ease of Use**: Abstracts low-level API calls and prompt engineering.
+- **Extensibility**: Add custom tools or integrate with any API.
+
+### Limitations
+- **Complexity**: Steep learning curve for advanced features like custom chains.
+- **Cost**: Relies on paid APIs (e.g., OpenAI, SerpAPI) for full functionality.
+- **Performance**: Dependent on the quality of the underlying LLM and tools.
+
+
 ---
+
 
 ### MCP
 
 > provides a structured way to connect AI agents with external tools
 
---
+---
 
 ### Google Maps MCP
 
@@ -389,7 +600,7 @@ maps_search_places = {
 
 ```
 
---
+---
 
 ## A2A
 
@@ -435,10 +646,11 @@ LLMs don’t like to click, they like to curl."- Andrej Karpathy
 If an LLM model is a destilled version of all text. all use  of it is a way to narrow the scope for its search or associciation 
 
 ---
+## got llm's -Xbit
+
 
 ```json
 GPT-4 release was here (0314)
-
 gpt-4-0613
 gpt-4-1106-vision-preview
 gpt-4-1106-preview
@@ -512,26 +724,23 @@ gpt-4.1
 
 ---
 
+<!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
+
 > "The future is already here – it's just not evenly distributed." - William Gibson
-
----
-
-
 
 ---
 
 Implications for lynx
 
+---
 
 > “There is nothing more dangerous than yesterday’s success - Carl Eschenbach”
 
 ---
 
-depending on where you put the fenomen on the gartner hype graph
+fixed pie or massive value proposition
 
-depending on you view this as a fixed pie or massive value proposition
-
-depending on 
+depending on aim to replace or accallerte
 
 - faster horses. 1 horse for every 10. Or a new world with highways and cars.
 
@@ -545,17 +754,9 @@ depending on
 
  the speed of this loop during turbulent times is paramount
 
- ---
+---
 
- case study; data platform
-
- - first conferences and discussions 2022
- - article seminars; research, systems,exectution, data 
- - 2025; 3 month 3 ppl fulltime 1 fulltime consultant for a prestudy; 
-  descided what tools to use.
- - what whould the equity group have done during the same insights 3 years ago?
-
- is this our oodla loop for change?
+ 
 
 ---
 
