@@ -1,3 +1,6 @@
+---
+theme: white
+---
 # Timeline of AI and Large Language Model (LLM) Development and Adoption
 
 ## Introduction
@@ -26,6 +29,8 @@ The evolution of artificial intelligence (AI) and large language models (LLMs) h
 ### 2021: Launch of GitHub Copilot
 - **Event**: GitHub Copilot, an AI-powered code completion tool developed by GitHub and OpenAI, was announced on June 29, 2021, and became generally available in June 2022 ([Introducing GitHub Copilot](https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/)).
 - **Adoption**: By June 2023, over 1 million developers had used Copilot, with 1.3 million paid individual users and 50,000 enterprise subscribers by early 2024 ([Copilot Adoption](https://aibusiness.com/companies/one-year-on-github-copilot-adoption-soars), [Copilot Revenue Growth](https://www.ciodive.com/news/github-copilot-subscriber-count-revenue-growth/706201/)). It is considered the world’s most widely adopted AI developer tool.
+
+
 
 ### 2022: Launch of ChatGPT
 - **Event**: ChatGPT, a conversational AI model by OpenAI, was launched on November 30, 2022, as a research preview ([ChatGPT](https://en.wikipedia.org/wiki/ChatGPT)).
@@ -83,6 +88,9 @@ ChatGPT’s premium service, ChatGPT Plus, saw exponential growth:
   - In 2025, 30% of U.S. companies plan to invest $10 million or more, up from 16% in 2024 ([AI Budget Surge](https://www.cfodive.com/news/us-firms-ai-budget-10m-higher-nearly-double-2025-ey/721425/)).
   - Smaller businesses spend $100–$5,000 monthly on AI tools, while large enterprises allocate millions for infrastructure and talent ([AI Pricing](https://www.webfx.com/martech/pricing/ai/)).
 
+
+---
+
 ## Data Tables
 
 ### Table 1: ChatGPT Plus Subscriber Growth
@@ -93,6 +101,9 @@ ChatGPT’s premium service, ChatGPT Plus, saw exponential growth:
 | End of 2024   | 15.5 million      | [ChatGPT Revenue Surge](https://www.theinformation.com/articles/chatgpt-revenue-surges-30-just-three-months) |
 | April 2025    | 20 million        | [ChatGPT Revenue Surge](https://www.theinformation.com/articles/chatgpt-revenue-surges-30-just-three-months) |
 
+
+---
+
 ### Table 2: AI Code Tools Market Growth
 | Year | Market Size (USD Billion) | CAGR (%) | Source                                                                 |
 |------|--------------------------|----------|------------------------------------------------------------------------|
@@ -100,12 +111,16 @@ ChatGPT’s premium service, ChatGPT Plus, saw exponential growth:
 | 2030 | 17.2                     | 22.3     | [AI Code Tools Market KBV](https://www.kbvresearch.com/ai-code-tools-market/) |
 | 2032 | 27.17                    | 23.2     | [AI Code Tools Market Polaris](https://www.polarismarketresearch.com/press-releases/ai-code-tools-market) |
 
+---
+
 ### Table 3: Corporate AI Adoption
 | Year | % of Companies Using AI | Source                                                                 |
 |------|-------------------------|------------------------------------------------------------------------|
 | 2015 | 10%                     | [AI Statistics](https://explodingtopics.com/blog/ai-statistics)         |
 | 2019 | 37%                     | [AI Statistics](https://explodingtopics.com/blog/ai-statistics)         |
 | 2024 | 78%                     | [State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) |
+
+---
 
 ## Limitations and Considerations
 - **Data Gaps**: Exact user numbers for Cursor and similar tools are not publicly available, limiting precision in adoption estimates.
@@ -115,3 +130,24 @@ ChatGPT’s premium service, ChatGPT Plus, saw exponential growth:
 
 ## Conclusion
 The timeline reflects AI’s rapid evolution from niche research to mainstream adoption. Pivotal moments like the transformer’s introduction and ChatGPT’s launch have driven technological leaps, while adoption metrics show growing consumer and corporate engagement. As AI continues to shape industries, investments and user bases are likely to expand further, with 2025 poised to be a defining year for AI integration.
+
+
+---
+
+
+```mermaid
+timeline
+    
+    2023 : Last Lynx AI presentation        
+    2023 : ChatGPT Plus launched with 215,000 subscribers
+         : Cursor AI emerged, reached $100 million in annual recurring revenue (ARR) within 12 months.
+         : Aider, open-source AI pair program for the terminal.
+    2024 : ChatGPT Plus hit 15.5 million subscribers.
+         : OpenAI introduced ChatGPT Pro at $200/month, offering unlimited access to o1, GPT-4o, and o1 pro mode for power users, signaling a push for high-end AI commercialization.
+    2024 : Bolt.New - prompt, run, deploy full-stack.
+         : Windsurf Ai-Code editor
+         : Lovable, full-stack from sweden
+    2025 : Windsurf aquired for $3 billion. Cursor valued $9 billion.
+         : Cloude Code - terminal 
+         : OpenAI Codex - terminal
+```

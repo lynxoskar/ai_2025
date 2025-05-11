@@ -31,29 +31,39 @@ customTheme: cyber2
 
 > Trends 
 
-> Techniques
+> Engine
 
-> Implications 
+> Take aways 
+
+> Implications
 
 <aside class="notes">https://hai-production.s3.amazonaws.com/files/hai_ai_index_report_2025.pdf</aside>
 
----
-https://hai.stanford.edu/ai-index/2025-ai-index-report
+
 
 ---
 
-## timeline
-<!-- .slide: data-fullscreen-->
-![](./diagrams/timeline.png)
+## Since last time
+
+
+```mermaid
+timeline
+    
+    2023 : Last Lynx AI presentation        
+    2023 : ChatGPT Plus launched with 215,000 subscribers
+         : Cursor AI emerged, reached $100 million in annual recurring revenue (ARR) within 12 months.
+         : Aider, open-source AI pair program for the terminal.
+    2024 : ChatGPT Plus hit 15.5 million subscribers.
+         : OpenAI introduced ChatGPT Pro at $200/month, offering unlimited access to o1, GPT-4o, and o1 pro mode for power users, signaling a push for high-end AI commercialization.
+    2024 : Bolt.New - prompt, run, deploy full-stack.
+         : Windsurf Ai-Code editor
+         : Lovable, full-stack from sweden
+    2025 : Windsurf aquired for $3 billion. Cursor valued $9 billion.
+         : Cloude Code - terminal 
+         : OpenAI Codex - terminal
+```
 
 <aside class="notes">notes here are - terminal based tools and valuation and growth of LLM using apps</aside>
-
----
-
-> The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.” 
-
-
-<aside class="notes">hello</aside>
 
 ---
 
@@ -63,13 +73,24 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 
 ---
 
+> The beaver told the rabbit as they stared at the Hoover Dam: No, I didn’t build it myself, but it’s based on an idea of mine.” 
+
+<aside class=notes>
+Old ideas that required enablers to come bloom. 
+</aside>
+
+
+<aside class="notes">hello</aside>
+
+---
+
 ### enablers
 
-1. Hardware
-2. Capital
-3. People
-4. Algorithms
-5. Data
+ - Hardware
+ - Capital 
+ - People 
+ - Algorithms 
+ - Data 
 
 --
 
@@ -78,6 +99,18 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 --
 
 ![](./pics/performance_year.png)
+
+<aside class=notes>
+At the hardware level, costs have declined by 30% annually, while energy efficiency has improved by 40% each year.
+</aside>
+
+--
+
+![](./diagrams/size_of_llm.png)
+
+<aside class="notes">
+Driven by increasingly capable small models, the inference cost for a system performing at the level of GPT-3.5 dropped over 280-fold between November 2022 and October 2024. 
+</aside>
 
 --
 
@@ -91,13 +124,21 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 
 ![](./pics/education.png)
 
+--
+
+![](./diagrams/performance.png)
+
 
 <aside class="notes">
-**Data & Corpus**
-   - Massive text datasets for training
-   - Not only seminal, offical texts but conversations and peoples use internet for two decades plus.
+Nearly 90% of notable AI models in 2024 came from industry, up from 60% in 2023, while academia remains the top source of highly cited research. Model scale continues to grow rapidly—
 
-   
+training compute doubles every five months, 
+
+datasets doubles every eight
+
+power use doubles annually. 
+ 
+
 </aside>
 
 ---
@@ -125,7 +166,6 @@ https://hai.stanford.edu/ai-index/2025-ai-index-report
 
 ---
 
----
 ## got llm's -Xbit
 
 
@@ -195,7 +235,7 @@ gpt-4.1-mini
 gpt-4.1-2025-04-14
 gpt-4.1
 
----
+--
 
 ![](./pics/pareto_frontier_race.jpg)
 
@@ -206,8 +246,8 @@ gpt-4.1
 
 <!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
-## Still a next token machine
-Techniques
+## Techniques
+
 
 --
 
@@ -284,8 +324,6 @@ One-shot and few-shot prompting: These techniques provide the LLM with one or a 
 
 --
 
-System, contextual, and role prompting: These techniques allow you to set the overall context and purpose (system prompt), provide specific background information (contextual prompt), or assign a specific character or identity to the LLM (role prompt). This can influence the style, tone, and focus of the LLM's output.
-
 3. **System Prompting**  
    This technique defines the overarching context or purpose for the LLM, such as specifying the task (e.g., classification, translation) or output format (e.g., JSON), guiding the model’s behavior at a high level.  
    
@@ -293,6 +331,10 @@ System, contextual, and role prompting: These techniques allow you to set the ov
    graph LR
    A[System Instruction] --> B[Task Prompt] --> C[Output]
    ```
+
+<aside class=notes>
+System, contextual, and role prompting: These techniques allow you to set the overall context and purpose (system prompt), provide specific background information (contextual prompt), or assign a specific character or identity to the LLM (role prompt). This can influence the style, tone, and focus of the LLM's output.
+<aside>
 
 --
 
@@ -443,6 +485,7 @@ def main():
 - **Remember**: Maintain context across interactions.
 - **Adapt**: Handle diverse tasks by swapping tools or prompts.
 
+
 --
 
 ### LangChain for AI Agents
@@ -566,6 +609,15 @@ print(response)
 ---
 
 
+> "If Claude is asked to count words, letters, and characters, it thinks step by step before answering the person. It explicitly counts the words, letters, or characters by assigning a number to each. It only answers the person once it has performed this explicit counting step."
+
+This is to help Claude solve 'r' in strawberry etc
+
+<aside class=notes>I was prompted to jot down this shower of thoughts after reading through Claude's system prompt, which currently seems to be around 17,000 words, specifying not just basic behavior style/preferences (e.g. refuse various requests related to song lyrics) but also a large amount of general problem solving strategies, e.g.: </aside>
+
+---
+
+
 ### MCP
 
 > provides a structured way to connect AI agents with external tools
@@ -643,140 +695,73 @@ LLMs don’t like to click, they like to curl."- Andrej Karpathy
 
 ---
 
+
+
+
 If an LLM model is a destilled version of all text. all use  of it is a way to narrow the scope for its search or associciation 
 
----
-## got llm's -Xbit
+Probablistic engine not deterministic. Tests, examples, reiteration building determenistic behaviour is going to be the new skill. 
 
-
-```json
-GPT-4 release was here (0314)
-gpt-4-0613
-gpt-4-1106-vision-preview
-gpt-4-1106-preview
-gpt-4-0125-preview
-gpt-4-turbo-2024-04-09
-gpt-4-turbo
-chatgpt-4o-latest
-text-moderation-007
-text-moderation-latest
-omni-moderation-2024-09-26
-omni-moderation-latest
-text-embedding-ada-002
-text-embedding-3-large
-text-embedding-3-small
-DALL·E 2
-DALL·E 3
-TTS HD
-TTS
-Whisper
-gpt-4o-mini-transcribe
-gpt-4o-transcribe
-gpt-4o-mini-tts
-babbage-002
-davinci-002
-gpt-3.5-turbo
-computer-use-preview-2025-03-11
-computer-use-preview
-gpt-4o-search-preview-2025-03-11
-gpt-4o-search-preview
-gpt-4o-mini-search-preview-2025-03-11
-gpt-4o-mini-search-preview
-o1-mini-2024-09-12
-o3-mini-2025-01-31
-o3-mini
-o1-pro-2025-03-19
-o1-pro
-o1-preview-2024-09-12
-o1-2024-12-17
-o1
-gpt-4o-mini-realtime-preview-2024-12-17
-gpt-4o-mini-realtime-preview
-gpt-4o-mini-audio-preview-2024-12-17
-gpt-4o-mini-audio-preview
-gpt-4o-mini-2024-07-18
-gpt-4o-mini
-gpt-4o-realtime-preview-2024-10-01
-gpt-4o-realtime-preview-2024-12-17
-gpt-4o-realtime-preview
-gpt-4o-audio-preview-2024-10-01
-gpt-4o-audio-preview-2024-12-17
-gpt-4o-audio-preview
-gpt-4o-2024-05-13
-gpt-4o-2024-11-20
-gpt-4o-2024-08-06
-gpt-4o
-gpt-4.5-preview-2025-02-27
-gpt-4.5-preview
-gpt-4.1-nano-2025-04-14
-gpt-4.1-nano
-gpt-4.1-mini-2025-04-14
-gpt-4.1-mini
-gpt-4.1-2025-04-14
-gpt-4.1
-
----
-
-![](./pics/pareto_frontier_race.jpg)
-
-<aside class="notes"> the frontier labs find specialiced llms or find prompting techniques that allows for iterating with prompting techiques. Big capable vs many smalls is researched heavily</aside>
-
+Massive codebases with known behaviour and complete example set of input/output are now not worth. Reimplementations are pretty much costless
 
 ---
 
 <!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
+## Implications
+
+---
+
 > "The future is already here – it's just not evenly distributed." - William Gibson
 
----
 
-Implications for lynx
-
----
-
-> “There is nothing more dangerous than yesterday’s success - Carl Eschenbach”
-
----
-
-fixed pie or massive value proposition
-
-depending on aim to replace or accallerte
-
-- faster horses. 1 horse for every 10. Or a new world with highways and cars.
+<aside class=notes> 
+Andrej - llms give everyone a chance. We all have access to the best llms. 
+Every one can do most things
+this is a new Operating system to the compute.
+</aside>
 
 ---
 
-## oodla - loop
- observe
- origent
- descide
- act
-
- the speed of this loop during turbulent times is paramount
+Lets bounce of Sebastian CEO of klarna 
+https://x.com/klarnaseb/status/1912436205985333688
 
 ---
 
- 
+> Delegation always had flaws, Telephone game. More and more doing yourself produces better results than delegating for lots of stuff
 
 ---
 
-Mentimeter - 
-  risk vs reward
-  fear vs hope 
-  Process vs Outcome driven development
-  Task vs Goal oriented leadership
-
+> Iterate even faster, prototype things. I used to bring an idea to a meeting. Now I bring a Lovable prototype. Not because it is perfect but it articulates the idea
 
 ---
 
-industry
- - CEO of snowflake
+> Massive requirements on managers to test things. Stay curious. Explore learn and do themselves. They need to embrace and lean it. Be courages to show themselves “weak” and embrace uncertainty. Say “I don’t understand”
+and ask ask ask.
 
- - CTO of Palantir
+---
 
- - CEO of Klarna
+> Challenges are now more than ever organizational not technical. Do
+I have the right people for this challenge? Are they using AI correctly? Are others in the company doing similar stuff? Are we moving at the pace we need to? Am
+I more driven by results or size of org I manage?
 
- - CEO of 80/20
+---
+
+> “There is nothing more dangerous than yesterday’s success" - Carl Eschenbach
+
+---
+
+## Mentimerter time
+
+- hype or new world
+
+- fixed pie or massive new value
+
+- replaced or accellerated
+
+---
+
+
 
 
 
