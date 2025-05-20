@@ -15,7 +15,6 @@ customTheme: cyber2
 <!-- .slide: -->
 ### gartner hype cycle
 
-
 ![](./pics/Gartner_Hype_Cycle.svg)
 
 ---
@@ -44,7 +43,6 @@ customTheme: cyber2
 ---
 
 ## Since last time
-
 
 ```mermaid
 timeline
@@ -137,8 +135,6 @@ training compute doubles every five months,
 datasets doubles every eight
 
 power use doubles annually. 
- 
-
 </aside>
 
 ---
@@ -246,7 +242,7 @@ gpt-4.1
 
 <!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
 
-## Techniques
+## Engine
 
 
 --
@@ -266,7 +262,6 @@ gpt-4.1
   - **Low Temperature (e.g., 0)**: The model becomes deterministic, always choosing the most probable token. This is great for precise, factual responses.
   - **High Temperature (e.g., close to 1 or higher)**: The model introduces more randomness, making less probable tokens more likely. This boosts creativity and diversity.
 - **Use Case**: Use a low temperature for tasks like answering factual questions and a high temperature for creative tasks like storytelling.
-
 
 --
 
@@ -296,7 +291,7 @@ gpt-4.1
 
 ### Prompt engineering
 
-When you write a prompt, you are essentially trying to set up the LLM to predict the desired sequence of tokens that constitutes your answer or output. Effective prompt engineering involves understanding how the model works and then tinkering with various aspects of the prompt, such as word choice, style, tone, structure, and the context provided, to achieve the desired outcome
+Effective prompt engineering involves understanding how the model works and then tinkering with various aspects of the prompt, such as word choice, style, tone, structure, and the context provided, to achieve the desired outcome
 
 --
 
@@ -410,17 +405,17 @@ System, contextual, and role prompting: These techniques allow you to set the ov
 ---
 
 ### agents
-> Ai agents are just a bunch of python scripts and an api key  
+> Ai agents are just python scripts and an api key  
 
 
----
+--
 
 ### Reflection
 
 
 ![](./diagrams/reflection.svg)
 
----
+--
 
 ### Tools
 
@@ -428,14 +423,14 @@ System, contextual, and role prompting: These techniques allow you to set the ov
 ![](./diagrams/tools.svg)
 
 
----
+--
 
 ### Planning
 
 ![](./diagrams/planning.svg)
 
 
----
+--
 
 ### Multi agent
 
@@ -485,7 +480,6 @@ def main():
 - **Remember**: Maintain context across interactions.
 - **Adapt**: Handle diverse tasks by swapping tools or prompts.
 
-
 --
 
 ### LangChain for AI Agents
@@ -498,7 +492,8 @@ def main():
 2. **Prompt Templates**:
    - LangChain provides templating to craft structured prompts that guide the LLM’s behavior. For example, an agent might use a template like:  
      ```
-     You are a helpful assistant. Given the user query: {query}, provide a concise answer and suggest a follow-up action.
+     You are a helpful assistant. Given the user query: {query}, 
+     provide a concise answer and suggest a follow-up action.
      ```
    - This ensures consistent and task-specific responses, critical for agents performing roles like customer support or task planning.
 
@@ -510,7 +505,6 @@ def main():
      - **ConversationBufferMemory**: Stores the full chat history.
      - **ConversationSummaryMemory**: Summarizes past interactions to save tokens.
      - **VectorStore-backed Memory**: Uses embeddings to retrieve relevant past interactions for long-term context.
-   - Example: An agent helping with project management can recall prior tasks or user preferences.
 
 --
 
@@ -551,7 +545,6 @@ def main():
    - For agents, this enables retrieval-augmented generation (RAG), where the agent pulls relevant documents or past interactions to inform its response.
    - Example: A customer support agent retrieves product manuals to answer technical questions.
 
-
 --
 
 ### Example: Building a Simple LangChain Agent
@@ -588,24 +581,6 @@ response = agent.run("What’s the latest news on AI advancements?")
 print(response)
 ```
 
-### Workflow in the Example
-1. **Input**: User asks about AI advancements.
-2. **Reasoning**: The agent (using ReAct) decides a web search is needed.
-3. **Action**: Calls the SerpAPI tool to fetch recent articles.
-4. **Output**: Summarizes findings and returns a response.
-
-### Why LangChain for AI Agents?
-- **Flexibility**: Mix and match LLMs, tools, and memory types.
-- **Scalability**: Handle complex workflows with chains and retrieval.
-- **Ease of Use**: Abstracts low-level API calls and prompt engineering.
-- **Extensibility**: Add custom tools or integrate with any API.
-
-### Limitations
-- **Complexity**: Steep learning curve for advanced features like custom chains.
-- **Cost**: Relies on paid APIs (e.g., OpenAI, SerpAPI) for full functionality.
-- **Performance**: Dependent on the quality of the underlying LLM and tools.
-
-
 ---
 
 
@@ -622,7 +597,7 @@ This is to help Claude solve 'r' in strawberry etc
 
 > provides a structured way to connect AI agents with external tools
 
----
+--
 
 ### Google Maps MCP
 
@@ -686,6 +661,10 @@ maps_search_places = {
   ]
 }
 
+--
+
+<!-- .slide: data-background-video="./movies/deer-flow.mp4" data-background-color="#000000" -->
+
 ---
 
 >"The primary audience of your thing (product, service, library, …) is now an LLM, not a human.
@@ -701,33 +680,41 @@ LLMs don’t like to click, they like to curl."- Andrej Karpathy
 
 ---
 
-Understand the strat...
+Understand the engine...
 
-A LLM model is a destilled version of all text. You want to narrow the scope for its search 
+A LLM model is a destilled version of all data. As a user you want to narrow the scope for its search. 
 
 --
 
 So its not right..
 
-Probablistic engine not deterministic. Tests, examples, reiteration building determenistic behaviour is going to be the new skill. 
+Probablistic engine. By Structure, examples, reiteration you build determenistic behaviour.
 
 --
 
-This is a skill. Learn mindshift. The real payoff only if we adapt and learn.
-Wont be free
+Holy cows beware....
+
+This is a skill and new operating paradigm. Experiment, evaluatue, re-evaluate. 
 
 --
 
 Sunken costs beware...
 
-Massive codebases with known behaviour and complete example set of input/output are now not worth. Reimplementations are pretty much costless
+Massive codebases with known behaviour. Example set of input/output are now easily reimplemented. 
+Reimplementations costs are moving towards 0
 
 --
 
-Expose all data
+![](./pics/mcgyver.jpg)
 
 --
 
+Expose all data at all levels
+Expose all metadata 
+SelfServe
+
+
+--
 
 
 <!-- .slide: data-background-opacity="0.4" data-background-image="./pics/blob.gif" data-background-color="#000000" -->
@@ -783,7 +770,6 @@ https://www.mentimeter.com/app/presentation/al79bou5b35scyzkv98y6qsbo2ydin2a/edi
 
 - fixed pie or massive new value
 
-- replaced or accellerated
 
 ---
 
